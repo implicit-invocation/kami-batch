@@ -1,0 +1,63 @@
+{
+  "name": "kami-batch",
+  "version": "1.0.0",
+  "description": "sprite batching for kami",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Matt DesLauriers <dave.des@gmail.com>",
+  "dependencies": {
+    "klasse": "~1.0.8",
+    "kami-mesh-buffer": "~1.0.0",
+    "kami-shader": "~1.0.0",
+    "kami-util": "~1.0.0",
+    "number-util": "~1.0.2"
+  },
+  "devDependencies": {
+    "tape": "~2.13.2",
+    "webgl-context": "~1.1.0",
+    "canvas-pixels": "0.0.0",
+    "kami-white-texture": "~1.0.0"
+  },
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "testling": {
+    "files": "test.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/latest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/kami-batch.git"
+  },
+  "homepage": "https://github.com/mattdesl/kami-batch",
+  "bugs": {
+    "url": "https://github.com/mattdesl/kami-batch/issues"
+  },
+  "keywords": [
+    "webgl",
+    "glsl",
+    "batch",
+    "sprite",
+    "batching",
+    "image",
+    "2d",
+    "images",
+    "kami",
+    "rendering",
+    "render",
+    "renderer"
+  ],
+  "optionalDependencies": {
+    "gl-texture2d": "~1.0.1",
+    "lena": "~1.0.0"
+  }
+}
