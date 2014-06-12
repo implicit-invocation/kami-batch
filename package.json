@@ -17,7 +17,9 @@
     "tape": "~2.13.2",
     "webgl-context": "~1.1.0",
     "canvas-pixels": "0.0.0",
-    "kami-white-texture": "~1.0.0"
+    "kami-white-texture": "~1.0.0",
+    "gl-texture2d": "~1.0.1",
+    "lena": "~1.0.0"
   },
   "scripts": {
     "test": "browserify test.js | testling -x open"
@@ -56,9 +58,5 @@
     "rendering",
     "render",
     "renderer"
-  ],
-  "optionalDependencies": {
-    "gl-texture2d": "~1.0.1",
-    "lena": "~1.0.0"
-  }
+  ]
 }
