@@ -17,7 +17,7 @@ var batch = require('../')(gl);
 //Note: gl-texture2d doesn't expose width/height
 //      so we can't use draw() with default args
 batch.begin();
-batch.setColor(1,1,1,0.85);
+batch.setColor(1,1,1,0.85); //draw at 85% opacity
 batch.draw(tex, 0, 0, 512, 512);
 batch.end();
 
