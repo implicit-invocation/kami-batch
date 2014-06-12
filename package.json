@@ -9,7 +9,7 @@
     "klasse": "~1.0.8",
     "kami-mesh-buffer": "~1.0.0",
     "kami-shader": "~1.0.0",
-    "kami-util": "~1.0.0",
+    "kami-util": "~1.1.0",
     "number-util": "~1.0.2"
   },
   "devDependencies": {

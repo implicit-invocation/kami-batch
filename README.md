@@ -13,3 +13,4 @@ sprite batching for kami
 ## License
 
 MIT, see [LICENSE.md](http://github.com/mattdesl/kami-batch/blob/master/LICENSE.md) for details.
+ 
