@@ -1,5 +1,5 @@
 /**
- * @module kami
+ * @module kami-batch
  */
 
 // Requires....
