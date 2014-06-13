@@ -1,4 +1,6 @@
 /**
+ * A fast and efficient 2D sprite batcher.
+ * 
  * @module kami-batch
  */
 
