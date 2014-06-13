@@ -7,9 +7,9 @@
 // Requires....
 var Class         = require('klasse');
 
-var BaseBatch     = require('./lib/BaseBatch');
 var Mesh          = require('kami-mesh-buffer');
 var ShaderProgram = require('kami-shader');
+var BaseBatch     = require('kami-base-batch');
 
 /**
  * A basic implementation of a batcher which draws 2D sprites.
@@ -21,10 +21,8 @@ var ShaderProgram = require('kami-shader');
  * and a dynamic vertex buffer that is updated with bufferSubData. 
  * 
  * @example
- *      var SpriteBatch = require('kami').SpriteBatch;  
- *      
  *      //create a new batcher
- *      var batch = new SpriteBatch(context);
+ *      var batch = require('kami-batch')(context);
  *
  *      function render() {
  *          batch.begin();
@@ -40,7 +38,8 @@ var ShaderProgram = require('kami-shader');
  * @uses BaseBatch
  * @constructor
  * @param {WebGLContext} context the context for this batch
- * @param {Number} size the max number of sprites to fit in a single batch
+ * @param {Object} options the options
+ * @param {Number} options.size the optional size of this batch, i.e. max number of quads
  */
 var SpriteBatch = new Class({
 
@@ -48,10 +47,10 @@ var SpriteBatch = new Class({
 	Mixins: BaseBatch,
 
 	//Constructor
-	initialize: function SpriteBatch(context, size) {
+	initialize: function SpriteBatch(context, options) {
 		if (!(this instanceof SpriteBatch))
-			return new SpriteBatch(context, size);
-		BaseBatch.call(this, context, size);
+			return new SpriteBatch(context, options);
+		BaseBatch.call(this, context, options);
 
 		/**
 		 * The projection Float32Array vec2 which is
@@ -237,6 +236,10 @@ var SpriteBatch = new Class({
 			return;
 		BaseBatch.prototype.flush.call(this);
 		SpriteBatch.totalRenderCalls++;
+	},
+
+	drawRegion: function(region, x, y, width, height) {
+		this.draw(region.texture, x, y, width, height, region.u, region.v, region.u2, region.v2);
 	},
 
 	/**
