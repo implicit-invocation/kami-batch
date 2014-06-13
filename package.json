@@ -6,6 +6,7 @@
   "license": "MIT",
   "author": "Matt DesLauriers <dave.des@gmail.com>",
   "dependencies": {
+    "kami-base-batch": "^1.0.1",
     "kami-mesh-buffer": "^1.0.3",
     "kami-shader": "~1.0.0",
     "kami-texture": "~1.0.2",
