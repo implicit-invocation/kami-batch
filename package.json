@@ -1,6 +1,6 @@
 {
   "name": "kami-batch",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "sprite batching for kami",
   "main": "index.js",
   "license": "MIT",
