@@ -51,7 +51,7 @@ var SpriteBatch = new Class({
 		if (!(this instanceof SpriteBatch))
 			return new SpriteBatch(context, options);
 		BaseBatch.call(this, context, options);
-
+		
 		/**
 		 * The projection Float32Array vec2 which is
 		 * used to avoid some matrix calculations.
