@@ -1,3 +1,9 @@
+//An example of using kami-batch with
+//other light-weight GL wrappers, like modules-gl.
+
+//Basically the texture object just needs to expose `bind()`,
+//and ideally width/height (for default draw() options to work)
+
 //setup a canvas
 var gl = require('webgl-context')({
     width: 512,

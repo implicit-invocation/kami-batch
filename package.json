@@ -9,8 +9,6 @@
     "kami-base-batch": "^1.0.4",
     "kami-mesh-buffer": "^1.0.3",
     "kami-shader": "~1.0.0",
-    "kami-texture": "~1.0.2",
-    "kami-util": "^1.1.2",
     "klasse": "~1.0.8",
     "number-util": "~1.0.2"
   },

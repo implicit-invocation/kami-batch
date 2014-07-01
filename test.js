@@ -1,7 +1,6 @@
 var getPixels = require('canvas-pixels').get3d;
 
 var SpriteBatch = require('./');
-var Texture = require('kami-texture');
 var test = require('tape').test;
 
 test('draws texture colors', function(t) {
