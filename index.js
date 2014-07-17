@@ -135,7 +135,7 @@ var SpriteBatch = new Class({
 		//we need to flush the batch..
 		if (this.drawing && (x != oldX || y != oldY)) {
 			this.flush();
-			this._updateMatrices();
+			this.updateMatrices();
 		}
 	},
 
