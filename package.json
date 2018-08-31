@@ -6,6 +6,7 @@
   "license": "MIT",
   "author": "Matt DesLauriers <dave.des@gmail.com>",
   "dependencies": {
+    "gl-matrix": "^2.8.1",
     "kami-base-batch": "^1.0.5",
     "kami-mesh-buffer": "^1.0.3",
     "kami-shader": "~1.0.0",
